@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+   
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Outfit&family=Poppins:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">    
+    <link rel="stylesheet" href="./styles/output.css">
+
+    <title>Supremo Açaí - O ápice do sabor em cada copo</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="w-full h-[420px] bg-zinc-900 bg-home bg-cover bg-center">
+        <div class="w-full h-full flex flex-col justify-center items-center">
+            <img src="./assets/logo2.jpg" alt="logo supremoacai"
+                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200" />
+            <h1 class="text-3xl mt-4 mb-2 font-bold text-white">
+                SUPREMO AÇAÍ
+            </h1>
+
+            <span class="text-white font-medium">
+                Rua Indiana, 20 - Jardim Ipiranga
+            </span>
+
+            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="open-close-spam">
+                <span class="text-white font-medium" id="open-close-text">EM FUNCIONAMENTO</span>
+            </div>
+        </div>
+    </header>
+    <!-- END HEADER -->
+
+    <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+        Monte o seu Açaí - Copo
+    </h2>
+
+    <!-- START MENU -->
+    <div id="menu">
+        <!-- >= 1024 3 grids lg:grid-cols-3 -->
+        <main class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+            <!-- CUP 400ML -->
+            <div class="flex gap-2">
+                <img src="./assets/copo-1.jpeg" alt="copo-400ml"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Açaí no Copo - 400ml</p>
+                    <p class="text-sm">Desfrute de um açaí cremoso, servido com 4 adicionais
+                        gratuitos para você personalizar sua experiência.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 17,90</p>
+                        <button class="bg-purple-600 px-5 rounded add-to-cart" 
+                            data-name="Açaí no Copo - 400ml"
+                            data-price="17.90">
+                            <i class="bi bi-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END CUP 400ML -->
+            <!-- CUP 500ML -->
+            <div class="flex gap-2">
+                <img src="./assets/copo-1.jpeg" alt="copo-500ml"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Açaí no Copo - 500ml</p>
+                    <p class="text-sm">Desfrute de um açaí cremoso, servido com 4 adicionais
+                        gratuitos para você personalizar sua experiência.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 19,90</p>
+                        <button class="bg-purple-600 px-5 rounded add-to-cart" 
+                            data-name="Açaí no Copo - 500ml"
+                            data-price="19.90">
+                            <i class="bi bi-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END CUP 500ML -->
+             <!-- CUP 770ML -->
+             <div class="flex gap-2">
+                <img src="./assets/copo-1.jpeg" alt="copo-770ml"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Açaí no Copo - 770ml</p>
+                    <p class="text-sm">Desfrute de um açaí cremoso, servido com 5 adicionais
+                        gratuitos para você personalizar sua experiência.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 22,90</p>
+                        <button class="bg-purple-600 px-5 rounded add-to-cart" 
+                            data-name="Açaí no Copo - 770ml"
+                            data-price="22.90">
+                            <i class="bi bi-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END CUP 770ML -->
+             <!-- CUP 1LITRO -->
+             <div class="flex gap-2">
+                <img src="./assets/copo-1.jpeg" alt="copo-1litro"
+                    class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+                <div>
+                    <p class="font-bold">Açaí no Copo - 1 Litro</p>
+                    <p class="text-sm">Desfrute de um açaí cremoso, servido com 6 adicionais
+                        gratuitos para você personalizar sua experiência.</p>
+
+                    <div class="flex items-center gap-2 justify-between mt-3">
+                        <p class="font-bold text-lg">R$ 36,90</p>
+                        <button class="bg-purple-600 px-5 rounded add-to-cart" 
+                            data-name="Açaí no Copo - 1 Litro"
+                            data-price="36.90">
+                            <i class="bi bi-cart-plus text-lg text-white"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- END CUP 1LITRO -->
+        </main>
+    </div>
+    <!-- END MENU -->
+
+    <!-- MODAL -->
+    <div id="cart-modal" class="bg-black/60 w-full h-full fixed top-0 z-[99] items-center justify-center hidden">
+        <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w-[610px]">
+            <h2 class="text-purple-800 text-center font-bold mb-2">
+                MEU CARRINHO
+            </h2>
+
+            <!-- ADICIONAR AO CARRINHO -->
+            <div id="cart-items" class="flex justify-between mb-2 flex-col">
+
+            </div>
+
+            <p class="text-purple-800 font-bold">Total :
+                <span id="cart-total" class="text-purple-800">0,00</span>
+            </p>
+
+            <p class="text-purple-800 font-bold mt-4">Endereço para entrega:</p>
+            <input
+            type="text"
+            placeholder="Digite o endereço de entrega"
+            id="address"
+            class="w-full border-2 p-1 rounded my-1"/>
+            
+            <p id="adress-error" class="text-red-600 hidden">Endereço Incompleto, corrija por favor!</p>
+
+            <div class="flex items-center justify-between mt-4 w-full">
+                <button id="close-button">Fechar</button>
+                <button id="checkout-button" class="bg-green-600 text-white px-4 py-1 rounded">FINALIZAR PEDIDO</button>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL -->
+    <footer class="w-full bg-purple-900 py-4 fixed bottom-0 z-40 flex items-center justify-center">
+        <button class="flex items-center gap-2 text-white font-bold"
+        id="open-cart-button">
+            <span id="cart-counter"></span>
+            ABRIR CARRINHO
+            <i class="bi bi-cart-plus text-lg text-white"></i>
+        </button>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+
+</html>
