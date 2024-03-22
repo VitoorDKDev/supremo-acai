@@ -94,12 +94,15 @@ function removeItemCart(name) {
         const item = cart[index];
         if (item.quantity > 1) {
             item.quantity -= 1;
-            updateCartModal();
+           
         }else{
             cart.splice(index, 1)
-            updateCartModal();
+            
+        }
+        if(cart.length===0){
             cartModal.style.display = "none";
         }
+        updateCartModal();
     }
 }
 
@@ -137,13 +140,15 @@ checkoutButton.addEventListener("click", function(){
 
     window.open(`https://wa.me/${number}?text=${whatsMessage} Endereço: ${addressInput.value}`)
     cart=[];
+    close
     updateCartModal();
+    cartModal.style.display = "none"
 })
 
 function checkOpen(){
     const date = new Date();
     const hours = date.getHours();
-    return hours >= 11 && hours < 23;
+    return hours >= 13 && hours < 23;
 }
 
 const openCloseSpam = document.getElementById("open-close-spam");
