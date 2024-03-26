@@ -32,7 +32,7 @@ mainMenu.addEventListener("click", function (event) {
         const itemName = parentIcon.getAttribute("data-name")
         const itemPrice = parseFloat(parentIcon.getAttribute("data-price"))
         addItemToCart(itemName, itemPrice)
-    }
+    }      
 })
 
 function addItemToCart(itemName, itemPrice) {
@@ -113,7 +113,7 @@ addressInput.addEventListener("input", function(event){
         adressError.classList.add("hidden")
     }
 })
-
+// EFETUAR COMPRA 
 checkoutButton.addEventListener("click", function(){
     if(!isOpen){
         sendToastify("O restaurante está fechado!", "#EF4444")
